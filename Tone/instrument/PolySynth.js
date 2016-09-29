@@ -64,7 +64,7 @@ function(Tone){
 				if(typeof options.voice === "function") {
 					v = options.voice(arguments[2], arguments[3]);
 				} else if (typeof options.voice === "object") {
-					v = options.voice.call$2(arguments[2], arguments[3]);
+					v = options.voice.call$3(arguments[2], arguments[3], i);
 				}
 			}
 			this.voices[i] = v;
